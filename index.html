@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Andres Angulo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Color Tone</title>
+    <link rel="icon" href="img/brain.png" type="image/x-icon" />
+    <script src="browser.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="mainTitle">AI Color Tone Detector</h1>
+    <form action="submit">
+      <label for="R">R:</label>
+      <input
+        class="R"
+        type="number"
+        placeholder="0-255"
+        min="0"
+        max="255"
+        required
+      />
+      <label for="G">G:</label>
+      <input
+        class="G"
+        type="number"
+        placeholder="0-255"
+        min="0"
+        max="255"
+        required
+      />
+      <label for="B">B:</label>
+      <input
+        class="B"
+        type="number"
+        placeholder="0-255"
+        min="0"
+        max="255"
+        required
+      />
+      <button class="checkColor" type="button">Check Color</button>
+    </form>
+    <br />
+    <h1 class="result"></h1>
+    <p class="textColor"></p>
+    <button class="random" type="button">Random Color</button>
+    <div class="colorBox">
+      <h1 class="rgbText">RGB</h1>
+    </div>
+  </body>
+</html>

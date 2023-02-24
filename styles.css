@@ -1,0 +1,126 @@
+body {
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  background: rgb(242, 255, 205);
+  background: radial-gradient(
+    circle,
+    rgba(242, 255, 205, 1) 0%,
+    rgba(228, 181, 167, 1) 100%
+  );
+}
+
+.mainTitle {
+  color: white;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000,
+    1px -1px 1px #000;
+  font-size: 2.5rem;
+}
+
+.colorBox {
+  margin-top: 60px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  place-content: center;
+  border: 2px solid black;
+  box-shadow: 8px 8px 35px 0px black;
+  border-radius: 10px;
+  background-color: azure;
+}
+
+.colorBox h1 {
+  margin-bottom: 10px;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 20px;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+button:hover,
+button:active {
+  transform: scale(1.05);
+  color: white;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000,
+    1px -1px 1px #000;
+  background: linear-gradient(
+    73deg,
+    rgba(245, 255, 0, 1) 0%,
+    rgba(0, 255, 8, 1) 16%,
+    rgba(4, 0, 255, 1) 30%,
+    rgba(196, 0, 255, 1) 42%,
+    rgba(255, 0, 18, 1) 50%,
+    rgba(196, 0, 255, 1) 58%,
+    rgba(4, 0, 255, 1) 70%,
+    rgba(0, 255, 8, 1) 82%,
+    rgba(245, 255, 0, 1) 100%
+  );
+}
+
+input {
+  height: 25px;
+  width: 70px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.textColor {
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 720px), (max-height: 650px) {
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .colorBox {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+  }
+  .colorBox h1 {
+    font-size: 2rem;
+  }
+
+  label {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  input {
+    height: 25px;
+    width: 45px;
+    font-size: 1.1rem;
+  }
+
+  .result {
+    font-size: 1.5rem;
+  }
+
+  button {
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 1.03rem;
+    font-weight: bold;
+  }
+}
